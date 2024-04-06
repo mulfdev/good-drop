@@ -1,0 +1,27 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && cp src/*.csv dist/ && cp src/*.json dist/",
+    "start": "tsc && node ./dist/main.js",
+    "dev": "tsx watch ./src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mulf",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.11.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@wagmi/connectors": "^4.1.24",
+    "@wagmi/core": "^2.6.15",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "viem": "^2.9.9"
+  }
+}
